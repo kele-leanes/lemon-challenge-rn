@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "827080131298",
+    "project_id": "lemon-challenge-kele",
+    "storage_bucket": "lemon-challenge-kele.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827080131298:android:f138ebc92630fac90ed4bb",
+        "android_client_info": {
+          "package_name": "com.lemonchallenge.kele"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827080131298-jq4p3admvnc9cfgbah5717u5tmqi9e8k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lemonchallenge.kele",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "827080131298-crictnqipctatg78ncr5i8jbl2u34r8g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK2prFFlwBPW6Px53IpDxvzVIG82bs-Uk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827080131298-crictnqipctatg78ncr5i8jbl2u34r8g.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "827080131298-58qqh703rfci15t42vp2e30i5duhenup.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.LemonChallenge"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:827080131298:android:784dbc9dbca97f840ed4bb",
+        "android_client_info": {
+          "package_name": "com.lemonchallengekele"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "827080131298-a1vqfusfalgplrbkouslcpuaagsibj2o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lemonchallengekele",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "827080131298-crictnqipctatg78ncr5i8jbl2u34r8g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK2prFFlwBPW6Px53IpDxvzVIG82bs-Uk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "827080131298-crictnqipctatg78ncr5i8jbl2u34r8g.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "827080131298-58qqh703rfci15t42vp2e30i5duhenup.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.LemonChallenge"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

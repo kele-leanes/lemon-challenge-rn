@@ -1,4 +1,4 @@
-package com.lemonchallenge;
+package com.lemonchallenge.kele;
 
 import android.app.Application;
 import android.content.Context;
