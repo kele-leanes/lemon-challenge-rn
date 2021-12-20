@@ -1,10 +1,13 @@
-import React, {useEffect, useState} from 'react';
-import {SafeAreaView} from 'react-native';
+import React, { useEffect, useState } from 'react';
+import { Image, SafeAreaView, Text, View } from 'react-native';
 import {
   GoogleSignin,
   GoogleSigninButton,
   statusCodes,
 } from '@react-native-google-signin/google-signin';
+import Logo from '../../../../assets/images/mapa.png';
+
+import { styles } from './styles';
 
 const Login = () => {
   const [user, setUserInfo] = useState();
@@ -33,9 +36,18 @@ const Login = () => {
     }
   };
   return (
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
+      <View>
+        <Image source={Logo} style={styles.logo} resizeMode="contain" />
+      </View>
+      <View style={styles.titleContainer}>
+        <Text style={styles.title}>Covid App</Text>
+        <Text style={styles.subtitle}>
+          The app to find the latest Covid 19 information
+        </Text>
+      </View>
       <GoogleSigninButton
-        style={{width: 192, height: 48}}
+        style={styles.loginButton}
         size={GoogleSigninButton.Size.Wide}
         color={GoogleSigninButton.Color.Dark}
         onPress={signIn}
