@@ -12,7 +12,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 const Login = () => {
   const dispatch = useDispatch();
-  //   const isLoading = useSelector(state => state.auth.isLoading);
+    // const isLoading = useSelector(state => state.auth.isLoading);
   useEffect(() => {
     GoogleSignin.configure({
       webClientId:

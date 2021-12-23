@@ -1,17 +1,7 @@
-export const GET_COUNTRIES = 'GET_COUNTRIES';
-export const SET_COUNTRIES = 'SET_COUNTRIES';
-export const COUNTRIES_LOADING = 'COUNTRIES_LOADING';
+import { createAction } from 'redux-actions';
 
-export const getCountries = () => ({
-  type: GET_COUNTRIES,
-});
-
-export const setCountries = payload => ({
-  type: SET_COUNTRIES,
-  payload,
-});
-
-export const setCountriesLoading = payload => ({
-  type: COUNTRIES_LOADING,
-  payload,
-});
+export const getCountries = createAction('countries/get-countries');
+export const setCountries = createAction('countries/set-countries');
+export const setCountriesLoading = createAction(
+  'countries/set-countries-loading',
+);

@@ -28,11 +28,11 @@ const StackNavigation = () => {
 };
 
 const RootNavigator = () => {
-  //   const user = useSelector(state => state.auth.user);
+  const user = useSelector(state => state.auth.user);
 
-  //   if (!user) {
-  //     return <Login />;
-  //   }
+  if (!user) {
+    return <Login />;
+  }
 
   return <StackNavigation />;
 };
