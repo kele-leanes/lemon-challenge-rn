@@ -1,4 +1,4 @@
-import { AUTH_LOADING, AUTH_SET_USER } from './actions';
+import { setUser, authLoading } from './actions';
 
 const initialState = {
   user: null,
@@ -7,17 +7,19 @@ const initialState = {
 
 export const authReducer = (state = initialState, action) => {
   switch (action.type) {
-    case AUTH_SET_USER:
+    case String(setUser): {
       return {
         ...state,
         user: action.payload,
         isLoading: false,
       };
-    case AUTH_LOADING:
+    }
+    case String(authLoading): {
       return {
         ...state,
         isLoading: action.payload,
       };
+    }
     default:
       return state;
   }
