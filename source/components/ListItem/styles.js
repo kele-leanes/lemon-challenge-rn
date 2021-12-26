@@ -7,6 +7,12 @@ export const styles = StyleSheet.create({
     marginBottom: StyleSheet.hairlineWidth,
     paddingVertical: 10,
     paddingHorizontal: 8,
+    flexDirection: 'row',
+    alignItems: 'center',
+  },
+  textContainer: {
+    marginHorizontal: 8,
+    width: '80%',
   },
   title: {
     fontSize: 20,
@@ -15,5 +21,6 @@ export const styles = StyleSheet.create({
   },
   subtitle: {
     fontStyle: 'italic',
+    color: theme.colors.grey,
   },
 });

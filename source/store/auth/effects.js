@@ -10,6 +10,8 @@ export function* workerGetUser() {
     yield put(setUser(userInfo));
   } catch (error) {
     console.log(error);
+  } finally {
+    yield put(authLoading(false));
   }
 }
 

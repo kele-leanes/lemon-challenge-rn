@@ -7,5 +7,6 @@ export const theme = {
     lightGreen: '#02c39a',
     white: '#FFFFFF',
     black: '#000000',
+    grey: '#BABABA',
   },
 };
