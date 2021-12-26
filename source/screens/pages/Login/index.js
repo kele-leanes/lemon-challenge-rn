@@ -9,22 +9,25 @@ import Logo from '../../../../assets/images/mapa.png';
 import { styles } from './styles';
 import { getUser } from '../../../store/auth/actions';
 import { useDispatch, useSelector } from 'react-redux';
+import { ScreenContainer } from '../../../components/ScreenContainer';
 
 const Login = () => {
   const dispatch = useDispatch();
-    // const isLoading = useSelector(state => state.auth.isLoading);
+  const isLoading = useSelector(state => state.auth.isLoading);
+
   useEffect(() => {
     GoogleSignin.configure({
       webClientId:
         '827080131298-crictnqipctatg78ncr5i8jbl2u34r8g.apps.googleusercontent.com',
     });
   }, []);
+
   const signIn = () => {
     dispatch(getUser());
   };
 
   return (
-    <SafeAreaView style={styles.container}>
+    <ScreenContainer style={styles.container}>
       <View>
         <Image source={Logo} style={styles.logo} resizeMode="contain" />
       </View>
@@ -38,9 +41,10 @@ const Login = () => {
         style={styles.loginButton}
         size={GoogleSigninButton.Size.Wide}
         color={GoogleSigninButton.Color.Dark}
+        disabled={isLoading}
         onPress={signIn}
       />
-    </SafeAreaView>
+    </ScreenContainer>
   );
 };
 

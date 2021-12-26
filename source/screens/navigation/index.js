@@ -5,6 +5,7 @@ import Login from '../pages/Login';
 import { useSelector } from 'react-redux';
 import Home from '../pages/Home';
 import { theme } from '../../constants/theme';
+import { Details } from '../pages/Details';
 
 const Stack = createNativeStackNavigator();
 
@@ -21,7 +22,12 @@ const StackNavigation = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator screenOptions={headerOptions}>
-        <Stack.Screen name="Countries" component={Home} />
+        <Stack.Screen name="Países" component={Home} />
+        <Stack.Screen
+          name="Casos confirmados"
+          component={Details}
+          options={({ route }) => ({ title: route.params.title })}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

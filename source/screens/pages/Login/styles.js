@@ -4,10 +4,8 @@ import { deviceWidth } from '../../../utils/dimensions';
 
 export const styles = StyleSheet.create({
   container: {
-    flex: 1,
     justifyContent: 'space-between',
     alignItems: 'center',
-    backgroundColor: theme.colors.background,
   },
   loginButton: {
     width: 192,
