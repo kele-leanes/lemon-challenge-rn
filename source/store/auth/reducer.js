@@ -1,4 +1,4 @@
-import { setUser, authLoading } from './actions';
+import { setUser, authLoading, setLogout } from './actions';
 
 const initialState = {
   user: null,
@@ -18,6 +18,12 @@ export const authReducer = (state = initialState, action) => {
       return {
         ...state,
         isLoading: action.payload,
+      };
+    }
+    case String(setLogout): {
+      return {
+        ...state,
+        user: null,
       };
     }
     default:
